@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escuela de Natación | Inicio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#inicio">
+        <i class="bi bi-droplet-half me-1"></i> Escuela de Natación
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="d-flex ms-lg-3 mt-3 mt-lg-0">
+          <!-- Siempre vuelve al login de este mismo proyecto -->
+          <a href="login.html" class="btn btn-outline-danger btn-logout">
+            <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / INICIO -->
+  <header id="inicio" class="hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h1 class="display-5 mb-3">Bienvenido(a) <span id="saludo-usuario">a la Escuela de Natación</span></h1>
+          <p class="lead mb-4">Clases para todas las edades y niveles: desde bebés hasta adultos, con enfoque en técnica, seguridad acuática y acondicionamiento físico.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#servicios" class="btn btn-primary btn-lg"><i class="bi bi-calendar2-check me-2"></i> Ver programas</a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone me-2"></i> Solicitar informes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="mb-2">Sobre nosotros</h2>
+          <p class="sub mb-4">Más de 10 años formando nadadores con instructores certificados y metodologías modernas.</p>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Instalaciones climatizadas todo el año</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Grupos reducidos y atención personalizada</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Programas para bebés, niños, jóvenes y adultos</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Entrenamiento para competencia y corrección técnica</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded-4 shadow" src="img/informes.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="bg-light">
+    <div class="container">
+      <h2 class="mb-2 text-center">Servicios</h2>
+      <p class="sub mb-5 text-center">Elige el plan que mejor se adapte a tus objetivos.</p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <div class="card-body p-4">
+              <div class="service-icon"><i class="bi bi-baby"></i></div>
+              <h5 class="card-title">Matronatación</h5>
+              <p class="card-text">Sesiones lúdicas para bebés de 6 a 36 meses, acompañados de mamá o papá.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <div class="card-body p-4">
+              <div class="service-icon"><i class="bi bi-people"></i></div>
+              <h5 class="card-title">Niños y Jóvenes</h5>
+              <p class="card-text">De principiantes a intermedios; enfoque en técnica, respiración y seguridad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <div class="card-body p-4">
+              <div class="service-icon"><i class="bi bi-person-check"></i></div>
+              <h5 class="card-title">Adultos</h5>
+              <p class="card-text">Aprende desde cero o mejora tu estilo. Horarios flexibles y grupos reducidos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <div class="card-body p-4">
+              <div class="service-icon"><i class="bi bi-trophy"></i></div>
+              <h5 class="card-title">Competencia</h5>
+              <p class="card-text">Plan de entrenamiento avanzado, preparación física y participación en eventos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#contacto" class="btn btn-primary btn-lg"><i class="bi bi-envelope-paper-heart me-2"></i> Pide informes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="mb-2">Contacto</h2>
+          <p class="sub">¿Tienes dudas? Escríbenos y con gusto te atendemos.</p>
+          <form class="row g-3" onsubmit="handleContacto(event)">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="col-md-6">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="correo" required>
+            </div>
+            <div class="col-12">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+            </div>
+            <div class="col-12 d-grid d-sm-block">
+              <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-send me-2"></i>Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-4x3">
+            <iframe class="mapa" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.41526457592!2d-99.1676653!3d19.3931066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff80c7d2a2c1%3A0x2a0e6f4c7e4f3a7a!2sAlberca!5e0!3m2!1ses-419!2smx!4v1719888888888"></iframe>
+          </div>
+          <div class="mt-3">
+            <p class="mb-1"><i class="bi bi-telephone me-2"></i><a href="tel:+5215512345678">+52 1 55 1234 5678</a></p>
+            <p class="mb-1"><i class="bi bi-envelope me-2"></i><a href="mailto:info@escueladenatacion.mx">info@escueladenatacion.mx</a></p>
+            <p class="mb-0"><i class="bi bi-geo-alt me-2"></i> Ciudad de México</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2">
+      <div>
+        <small>© <span id="anio"></span> Escuela de Natación. Todos los derechos reservados.</small>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="#inicio" class="d-inline-flex align-items-center"><i class="bi bi-arrow-up-circle me-1"></i> Subir</a>
+        <a href="#contacto" class="d-inline-flex align-items-center"><i class="bi bi-chat-dots me-1"></i> Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Personaliza el saludo con el parámetro ?usuario= del login
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const nombre = params.get('usuario');
+      const span = document.getElementById('saludo-usuario');
+      if (nombre) { span.textContent = nombre; }
+      document.getElementById('anio').textContent = new Date().getFullYear();
+    })();
+
+    // Cierra el menú al hacer clic en un enlace (en móviles)
+    document.querySelectorAll('#navContent .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const off = document.getElementById('navContent');
+        const bs = bootstrap.Collapse.getOrCreateInstance(off);
+        if (bs) bs.hide();
+      });
+    });
+
+    // Demo de envío de contacto
+    function handleContacto(e){
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const correo = document.getElementById('correo').value;
+      alert(`¡Gracias, ${nombre}! Te responderemos a ${correo} en breve.`);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

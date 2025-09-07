@@ -1,0 +1,63 @@
+body.login-bg {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background-image: url('img/loginNatacion.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Caja estilo glass */
+.login-glass {
+  width: 350px;                 
+  border-radius: 12px;
+  background: rgba(0,0,0,0.75); 
+  border: 1px solid rgba(255, 255, 255, 0.067);
+  backdrop-filter: blur(12px) saturate(120%);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+  padding: 30px 25px;          
+  color: #fff;
+  text-align: center;
+
+  height: auto;               
+  max-height: 500px;            
+}
+
+
+/* Títulos */
+.login-glass h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Inputs */
+.login-glass input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Botón */
+.login-glass button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-glass button:hover {
+  background: #0056b3;
+}
